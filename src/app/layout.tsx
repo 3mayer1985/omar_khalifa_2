@@ -8,21 +8,38 @@ const inter = Inter({
   subsets: ["latin"],
 });
 
-const SITE_URL = "https://omarkhalifa.dev";
+const SITE_URL = "https://omarkhalifa.cloud";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: "Omar Khalifa — Senior Technical Project Manager | Embedded Systems & AI",
   description:
     "Portfolio of Omar Khalifa — PMP®-certified Senior Technical Project Manager and Technical Team Leader at STMicroelectronics, 17 years across embedded validation, IC design and AI-forward workflow automation.",
+  alternates: {
+    canonical: SITE_URL,
+  },
   openGraph: {
     type: "website",
+    url: SITE_URL,
+    siteName: "Omar Khalifa",
     title: "Omar Khalifa — Senior Technical Project Manager | Embedded Systems & AI",
     description:
       "PMP®-certified Senior Technical Project Manager at STMicroelectronics — validation engineering, embedded systems, and AI/LLM-driven automation.",
+    images: [
+      {
+        url: "/images/omar-photo.jpg",
+        width: 600,
+        height: 800,
+        alt: "Omar Khalifa",
+      },
+    ],
   },
   twitter: {
     card: "summary",
+    title: "Omar Khalifa — Senior Technical Project Manager | Embedded Systems & AI",
+    description:
+      "PMP®-certified Senior Technical Project Manager at STMicroelectronics — validation engineering, embedded systems, and AI/LLM-driven automation.",
+    images: ["/images/omar-photo.jpg"],
   },
   icons: {
     icon: "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧭</text></svg>",
