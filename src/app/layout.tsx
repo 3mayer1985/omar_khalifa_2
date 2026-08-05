@@ -8,13 +8,13 @@ const inter = Inter({
   subsets: ["latin"],
 });
 
-const SITE_URL = "https://omarkhalifa.cloud";
+const SITE_URL = "https://www.omarkhalifa.cloud";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title: "Omar Khalifa — Senior Technical Project Manager | Embedded Systems & AI",
+  title: "Omar Khalifa — Senior Technical Project Manager (PMP®)",
   description:
-    "Portfolio of Omar Khalifa — PMP®-certified Senior Technical Project Manager and Technical Team Leader at STMicroelectronics, 17 years across embedded validation, IC design and AI-forward workflow automation.",
+    "PMP®-certified Senior Technical Project Manager at STMicroelectronics — 17 years in embedded validation, IC design, and AI-driven workflow automation.",
   alternates: {
     canonical: SITE_URL,
   },
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     type: "website",
     url: SITE_URL,
     siteName: "Omar Khalifa",
-    title: "Omar Khalifa — Senior Technical Project Manager | Embedded Systems & AI",
+    title: "Omar Khalifa — Senior Technical Project Manager (PMP®)",
     description:
       "PMP®-certified Senior Technical Project Manager at STMicroelectronics — validation engineering, embedded systems, and AI/LLM-driven automation.",
     images: [
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary",
-    title: "Omar Khalifa — Senior Technical Project Manager | Embedded Systems & AI",
+    title: "Omar Khalifa — Senior Technical Project Manager (PMP®)",
     description:
       "PMP®-certified Senior Technical Project Manager at STMicroelectronics — validation engineering, embedded systems, and AI/LLM-driven automation.",
     images: ["/images/omar-photo.jpg"],
@@ -61,14 +61,23 @@ const jsonLd = {
   "@type": "Person",
   name: "Omar Khalifa",
   jobTitle: "Senior Technical Project Manager (PMP)",
-  worksFor: { "@type": "Organization", name: "STMicroelectronics" },
+  url: SITE_URL,
+  image: `${SITE_URL}/images/omar-photo.jpg`,
+  worksFor: {
+    "@type": "Organization",
+    name: "STMicroelectronics",
+    url: "https://www.st.com",
+  },
   alumniOf: {
     "@type": "CollegeOrUniversity",
     name: "National Engineering School of Tunis (ENIT)",
+    url: "https://www.enit.rnu.tn",
   },
   address: { "@type": "PostalAddress", addressCountry: "TN", addressRegion: "Tunis" },
-  url: "https://www.linkedin.com/in/omar-khalifa-94050014/",
-  sameAs: ["https://www.linkedin.com/in/omar-khalifa-94050014/"],
+  sameAs: [
+    "https://www.linkedin.com/in/omar-khalifa-94050014/",
+    "https://www.credly.com/badges/89d33371-8787-42f6-a460-f7be96bfacb2/public_url",
+  ],
 };
 
 export default function RootLayout({
