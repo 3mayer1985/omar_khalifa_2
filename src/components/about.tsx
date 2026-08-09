@@ -1,5 +1,5 @@
 import Reveal from "./reveal";
-import { about } from "@/lib/data";
+import { about, aboutCoreStrengths } from "@/lib/data";
 
 export default function About() {
   return (
@@ -10,6 +10,12 @@ export default function About() {
         </Reveal>
         <Reveal delay={0.05}>
           <p className="mt-5 max-w-[720px] text-[1.05rem] text-text-muted">{about}</p>
+        </Reveal>
+        <Reveal delay={0.1}>
+          <p className="mt-4 max-w-[720px] text-[1.05rem] text-text-muted">
+            <span className="font-semibold text-text">Core strengths: </span>
+            {aboutCoreStrengths}
+          </p>
         </Reveal>
       </div>
     </section>

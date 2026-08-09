@@ -19,7 +19,10 @@ export const stats = [
 ];
 
 export const about =
-  "I am a results-driven technical professional with extensive project and validation engineering experience in the semiconductor and electronics industries. I demonstrate strong leadership in managing the scope, schedule, risks, and quality of product validation, and excel at coordinating cross-functional teams and engaging with multinational stakeholders. I have significant expertise in test solution architecture, hardware/software validation, and mentoring team members. I am a certified Project Management Professional (PMP)®, and I bring an AI-forward approach to my work — leveraging GitHub Copilot in daily development tasks and recently completing an n8n certification in workflow automation and agentic AI design to bring intelligent automation into technical and project workflows.";
+  "PMP®-certified Senior Technical Project Manager with 17+ years in semiconductor and embedded systems, among them 6 years in leading validation and product-development programs for global semiconductor customers (Apple, Samsung, Motorola, EchoStar…). Delivered 30+ projects across Agile and Waterfall frameworks, managing teams of up to 6 engineers, and cross-functional stakeholders across 6 countries. Reduced schedule slippage by 15% through proactive risk management. Now extending this track record with hands-on workflow-automation and AI-agent skills (n8n, GitHub Copilot, Claude Code) to modernize PM and engineering operations.";
+
+export const aboutCoreStrengths =
+  "project management, program and risk management, stakeholder management, cross-functional team leadership, and technical mentoring, combined with deep hands-on expertise in embedded systems, IC/hardware validation, and test solution architecture";
 
 export type ExperienceItem = {
   title: string;
